@@ -1,0 +1,426 @@
+/* Reset CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+/* Common */
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.col-full {
+  width: 100%;
+}
+
+.col-half {
+  width: 50%;
+}
+
+.col-third {
+  width: 33.33333%;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.mt-8 {
+  margin-top: 8px !important;
+}
+
+.mt-16 {
+  margin-top: 16px !important;
+}
+.pull-right {
+  float: right !important;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #ccc;
+  color: #000;
+}
+
+/* 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Tổng quan đến chi tiết
+*/
+
+/* 
+1.Vi tri
+2.Kich thuoc
+3. Mau sac
+4. Kieu dang (kieu chu, ...)
+*/
+
+/* Main */
+#main {
+}
+
+.clear {
+  clear: both;
+}
+
+#header {
+  position: fixed;
+  height: 46px;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #000;
+  z-index: 1;
+}
+
+#nav {
+  display: inline-block;
+}
+
+#nav,
+.subnav {
+  list-style-type: none;
+}
+
+#nav > li {
+  display: inline-block;
+}
+
+#nav li {
+  position: relative;
+}
+
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0px 24px;
+  display: inline-block;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+#nav .subnav {
+  display: none;
+  min-width: 160px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+  color: #000;
+  padding: 0px 12px;
+  line-height: 38px;
+}
+
+#nav .nav-arrow-down {
+  font-size: 14px;
+}
+
+#header .mobile-menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn {
+  float: right;
+  padding: 0 21px;
+}
+
+#header .mobile-menu-btn {
+}
+
+#header .search-btn:hover {
+  cursor: pointer;
+  background-color: #f44336;
+}
+
+#header .mobile-menu-btn:hover {
+  background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+  color: #000;
+}
+#header .menu-icon,
+#header .search-icon {
+  font-size: 12px;
+  color: #fff;
+  line-height: 46px;
+}
+
+#content {
+}
+
+#slider {
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url("/HTML_CSS/W3_Band/assets/img/Slider/slider1.jpg") top center /
+    cover no-repeat;
+}
+
+#slider .text-content {
+  position: absolute;
+  bottom: 54px;
+  color: #fff;
+  /* left: 50%;
+    transform: translateX(-50%); */
+  width: 100%;
+  text-align: center;
+}
+
+#slider .text-heading {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+#slider .text-description {
+  font-size: 15px;
+  margin: 15px 0;
+}
+
+#content {
+}
+
+#content .content-section {
+  width: 800px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 0 112px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+#content .section-heading {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 15px 0;
+  text-align: center;
+  font-style: italic;
+  opacity: 0.6;
+}
+
+#content .about-text {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 15px 0;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+#content .members-list {
+  padding-top: 16px;
+  /* overflow: hidden; */
+}
+
+#content .member-name {
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+#content .member-img {
+  border-radius: 4px;
+  width: 154px;
+}
+
+.tour-section {
+  background-color: #000;
+}
+
+.tickets-list {
+  background-color: #fff;
+}
+
+.tickets-list li {
+  color: #757575;
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+}
+
+.tickets-list .sold-out {
+  background-color: #f44336;
+  color: #fff;
+  padding: 3px 4px;
+  margin: 16px;
+}
+
+.tickets-list .quantity {
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 50%;
+  margin-top: -3px;
+}
+
+.places-list {
+  margin-top: 16px;
+}
+
+.place-img {
+  width: 100%;
+  height: 183.98px;
+  display: block;
+}
+
+.place-img:hover {
+  opacity: 0.6;
+}
+
+.place-body {
+  background-color: #fff;
+  font-size: 15px;
+  padding: 16px;
+}
+
+.place-heading {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.place-time {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 15px;
+  color: #757575;
+}
+
+.place-desc {
+  margin-top: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.4;
+}
+
+.btn {
+  background-color: #000;
+  text-decoration: none;
+  color: #fff;
+  padding: 9px 21px;
+  display: inline-block;
+  margin-top: 15px;
+  border: none;
+  text-align: center;
+  -webkit-appearance: none;
+}
+
+/* Contact form */
+.contact-content {
+  margin-top: 40px;
+}
+
+.contact-info {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+  width: 30px;
+  display: inline-block;
+}
+
+.contact-form {
+  font-size: 15px;
+}
+
+.form-control {
+  padding: 12px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+/* .contact-form .btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 11px 17px;
+    float: right;
+} */
+
+.map-section img {
+  width: 100%;
+}
+
+#footer {
+  padding: 64px 16px;
+}
+
+#footer .social-list {
+  text-decoration: none;
+  font-size: 24px;
+}
+
+#footer .social-list a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+#footer .copy-right a:hover,
+#footer .social-list a:hover {
+  opacity: 0.6;
+}
+
+#footer .copy-right {
+  margin: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copy-right a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#header {
+}
